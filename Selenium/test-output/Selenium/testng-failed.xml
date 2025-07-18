@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Selenium]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="nova.Selenium.Testemplate"/>
+  </listeners>
+  <test thread-count="5" name="draganddrop(failed)">
+    <parameter name="month" value="november"/>
+    <parameter name="year" value="1990"/>
+    <parameter name="day" value="28"/>
+    <classes>
+      <class name="nova.Selenium.Datesone">
+        <methods>
+          <include name="sizable"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- nova.Selenium.Datesone -->
+    </classes>
+  </test> <!-- draganddrop(failed) -->
+</suite> <!-- Failed suite [Selenium] -->
