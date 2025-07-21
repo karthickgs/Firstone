@@ -14,22 +14,30 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
-public class Excel_utility {
+public class Excel_utility extends Constant_loader {
 
 	static XSSFWorkbook book;
 	static XSSFSheet sheet;
 	static XSSFCell cell;
 	String getHeader;
-	String spath = "C:\\Users\\k1027\\Documents\\Automation\\Framework_selenium\\WC_product_files\\Test_data.xlsx";
-	String sheetname = "Sheet1";
-	String ckey;
-	
-	public Excel_utility (String ckey) {
-		this.ckey = ckey;
-		
+	static String spath;
+	static String sheetname;
+	static {
+		try {
+	  spath = Constant_loader.constants("spath"); 
+	  sheetname = Constant_loader.constants("sheetname");
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
-	
-	
+	}
+	String ckey;
+
+	public Excel_utility(String ckey) {
+		this.ckey = ckey;
+
+	}
+
 	public static void actionKeywordExcelReader(String spath, String sheetname) throws IOException {
 
 		FileInputStream file = new FileInputStream(spath);
@@ -83,13 +91,5 @@ public class Excel_utility {
 		return result;
 
 	}
-
-//	public static void main(String[] args) throws IOException {
-//
-//		
-//		String print = Excel_utility.keyword(path, sheetname, getHeader);
-//		System.out.println(print);
-//
-//	}
 
 }

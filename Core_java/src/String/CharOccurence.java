@@ -17,6 +17,16 @@ public class CharOccurence {
 		   System.out.println("Occurances of '"+cha.charAt(i)+"':"+count);
 	   }
    }
+   
+   public String reverseString(char[] s) {
+       String res= " ";
+       for(int i=0;i<s.length;i++){
+           
+           res=s[i]+res;
+           
+       }
+        return res;
+   }
    public void lengthOfLongestSubstring(String s) {
 	  
         StringBuilder str = new StringBuilder();
@@ -32,13 +42,29 @@ public class CharOccurence {
         System.out.println(str);
         
        }
-     
+   public char[] reverse(char[] s) {
+       char[] res= new char[s.length];
+       int count=0;
+       for(int i=s.length-1;i>=0;i--){
+           
+          res[count] = s[i];
+           count ++;
+       }
+        return res;
+   }
 
     public static void main(String[] args) {
         
         CharOccurence chars= new CharOccurence();
-        //chars.addchar("Kaammmrthick");
-        chars.lengthOfLongestSubstring("n");
+//      chars.addchar("Kaammmrthick");
+//      chars.lengthOfLongestSubstring("n");
+        char [] s = {'H','e','l','l','o'};
+        String res=chars.reverseString(s);
+        System.out.println(res);
+        char [] x = chars.reverse(s);
+        for(char i:x) {
+        	System.out.println(i);
+        }
     }
 }
 
