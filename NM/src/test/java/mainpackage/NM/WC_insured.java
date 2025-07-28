@@ -178,6 +178,7 @@ public class WC_insured  {
 		
 		js.executeScript("document.getElementById('ddlLocality').selectedIndex=1");
 		
+
 		js.executeScript("document.getElementById('ddlSocialOthers').selectedIndex =1");
 		
 		js.executeScript("document.getElementById('ddlDoctype').selectedIndex =2");
@@ -225,7 +226,7 @@ public class WC_insured  {
 	}
 
 	@Test
-	public void docUpload(String filePath,String remarks) throws InterruptedException, AWTException {
+	public void docUpload(String filePath,String remarks) throws InterruptedException {
 		
 		driver.findElement(By.id("Imagepanupload")).click();
 		WebElement PAN=driver.findElement(By.xpath("//input[@id='Button7']/following-sibling::button/span[2]"));

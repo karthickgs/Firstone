@@ -22,6 +22,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>src/test/java/keyword_driven_model/Constants.properties</name>
+			<type>1</type>
+			<location>C:/Users/k1027/Documents/Automation/Framework_selenium/WC_product_files/Constants.properties</location>
+		</link>
+		<link>
 			<name>src/test/java/keyword_driven_model/Dataaction_engine.xlsx</name>
 			<type>1</type>
 			<location>C:/Users/k1027/Documents/Automation/Framework_selenium/WC_product_files/Dataaction_engine.xlsx</location>

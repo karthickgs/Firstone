@@ -22,6 +22,8 @@ public class Excel_utility extends Constant_loader {
 	String getHeader;
 	static String spath;
 	static String sheetname;
+	String ckey;
+	String result = "";
 	static {
 		try {
 	  spath = Constant_loader.constants("spath"); 
@@ -31,43 +33,46 @@ public class Excel_utility extends Constant_loader {
 		e.printStackTrace();
 	}
 	}
-	String ckey;
+	
 
-	public Excel_utility(String ckey) {
-		this.ckey = ckey;
+	
+	
+	
 
+//	public static void actionKeywordExcelReader(String spath, String sheetname) throws IOException {
+//
+//		FileInputStream file = new FileInputStream(spath);
+//		book = new XSSFWorkbook(file);
+//		sheet = book.getSheet(sheetname);
+//
+//	}
+//
+//	public static String getcelldata(int row, int col) {
+//
+//		cell = sheet.getRow(row).getCell(col);
+//		String celldata = cell.getStringCellValue();
+//		return celldata;
+//
+//	}
+
+	public void setckey(String ckey) {
+		this.ckey=ckey;
 	}
-
-	public static void actionKeywordExcelReader(String spath, String sheetname) throws IOException {
-
-		FileInputStream file = new FileInputStream(spath);
-		book = new XSSFWorkbook(file);
-		sheet = book.getSheet(sheetname);
-
-	}
-
-	public static String getcelldata(int row, int col) {
-
-		cell = sheet.getRow(row).getCell(col);
-		String celldata = cell.getStringCellValue();
-		return celldata;
-
-	}
-
-	public String keyword() throws IOException {
+	public String getckey() throws IOException {
 		FileInputStream file = new FileInputStream(spath);
 		book = new XSSFWorkbook(file);
 		sheet = book.getSheet(sheetname);
 		int rowvalue = sheet.getPhysicalNumberOfRows();
-
-		String result = "";
+		
+		
 		Map<String, String> allrec1 = new HashMap<String, String>();
 
 		for (int i = 0; i < rowvalue; i++) {
 
 			XSSFRow row = sheet.getRow(i);
 			int col1 = sheet.getRow(i).getLastCellNum();
-			System.out.println(col1);
+		
+			
 
 			if (row != null) {
 
@@ -91,5 +96,7 @@ public class Excel_utility extends Constant_loader {
 		return result;
 
 	}
+	
+	
 
 }
