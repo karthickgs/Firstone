@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="InovaTest(failed)">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="InovaTest(failed)(failed)">
     <classes>
       <class name="Appium.LoginConfiguration">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- Appium.LoginConfiguration -->
     </classes>
-  </test> <!-- InovaTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- InovaTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
