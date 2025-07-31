@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-15T18:11:10 IST" name="Default suite" finished-at="2025-06-15T18:11:14 IST" duration-ms="4156">
+    <groups>
+    </groups>
+    <test started-at="2025-06-15T18:11:10 IST" name="Default test" finished-at="2025-06-15T18:11:14 IST" duration-ms="4156">
+      <class name="Groupid.RestAssured.CreateLogin">
+        <test-method signature="add_order()[pri:0, instance:Groupid.RestAssured.CreateLogin@18d87d80]" started-at="2025-06-15T18:11:10 IST" name="add_order" finished-at="2025-06-15T18:11:14 IST" duration-ms="4100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_order -->
+      </class> <!-- Groupid.RestAssured.CreateLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

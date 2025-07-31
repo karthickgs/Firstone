@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test">
+  <parameter name="username" value="admin"/>
+  <parameter name="pswd" value="shriram@1"/>
+  <parameter name="division" value="421010"/>
+  <parameter name="screenname" value="work"/>
+  <parameter name="proposalType" value="1"/>
+  <parameter name="customer" value="AA0000000003"/>
+  <parameter name="Fname" value="Abiman"/>
+  <parameter name="Inscode" value="IN-23474115"/>
+  <parameter name="riskLoc" value="Chennai"/>
+  <parameter name="insBusiness" value="Tea Estate Owner"/>
+  <parameter name="busSource" value="Direct"/>
+   <parameter name="exeCode" value="KARETI SUKUMAR"/>
+    <classes>
+      <class name="mainpackage.NM.WC_insured"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

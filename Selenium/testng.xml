@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium">
+<listeners>
+<listener class-name ="nova.Selenium.Testemplate"> </listener>
+</listeners>
+<parameter name= "browser" value="chrome"/>
+  <test  name="draganddrop">
+  <parameter name= "day" value="28"/>
+  <parameter name= "month" value="november"/>
+  <parameter name= "year" value="1990"/>
+    <classes>
+      <class name="nova.Selenium.Datesone"/>
+    </classes>
+  </test> <!-- draganddrop -->
+</suite> <!-- Selenium -->
