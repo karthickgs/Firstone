@@ -7,17 +7,31 @@ import java.util.TreeMap;
 
 public class Addingspaces {
 	
-	public void addingspaces(String s,int []a) {
-		for(int i:a) {
-			String space = "//+s";
-			Map<String,Integer> addlist = new TreeMap();
-			addlist.put(s, s.indexOf(i) );
-		}
+	public String addingspaces(String s,int a[]) {
+		
+		int len = s.length();
+		
+		String result="";
+		for(int i=0;i<len;i++) {
+			result += s.charAt(i);
+			for(int j:a) {
+			if(result.indexOf(s.charAt(i))==j-1) {
+				result = result+" ";
+			}
+			}
 	}
+		return result;
+	}
+		
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+		Addingspaces spc = new Addingspaces();
+		String name = "Karthick";
+		int []a = {2,6};
+		String res=spc.addingspaces(name, a);
+		System.out.println(res);
 	}
 
 }
