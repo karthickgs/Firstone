@@ -1,0 +1,26 @@
+{
+	"_comment": "Framework Name: Novac Automation Framework | Author: SriramR-NOVAC | File Name: LoginPage.json | Description: Object repository for login page elements",
+	"pageName": "LoginPage",
+	"elements": [
+		{
+			"name": "customInputUsername",
+			"xpathValue": "//input[@name='username' or @id='username' or @placeholder='Username' or contains(@class,'username') or @type='text'][1]"
+		},
+		{
+			"name": "customInputPassword",
+			"xpathValue": "//input[@name='password' or @id='password' or @placeholder='Password' or @type='password'][1]"
+		},
+		{
+			"name": "customInputDivision",
+			"xpathValue": "//input[@id='btLogin' or @placeholder='Division']"
+		},
+		{
+			"name": "submit-btn",
+			"xpathValue": "//button[@name='btLogin']||//button([@class='myButton'])[2]"
+		},
+		{
+			"name": "login-btn",
+			"xpathValue": "//button[@id='login-button' or @type='submit' or contains(@class,'login') or contains(text(),'Login') or contains(text(),'Sign In') or contains(@value,'Login')][1]"
+		}
+	]
+}
