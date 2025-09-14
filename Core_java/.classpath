@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-22">
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
 		<attributes>
 			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/k1027/.m2/repository/org/apache/xmlbeans/xmlbeans/5.2.1/xmlbeans-5.2.1.jar" sourcepath="C:/Users/k1027/.m2/repository/org/apache/xmlbeans/xmlbeans/5.2.1/xmlbeans-5.2.1-sources.jar">
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.apache.xmlbeans"/>
-			<attribute name="maven.artifactId" value="xmlbeans"/>
-			<attribute name="maven.version" value="5.2.1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/k1027/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar" sourcepath="C:/Users/k1027/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.slf4j"/>
+			<attribute name="maven.artifactId" value="slf4j-api"/>
+			<attribute name="maven.version" value="2.0.17"/>
+			<attribute name="maven.scope" value="runtime"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/k1027/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar" sourcepath="C:/Users/k1027/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.slf4j"/>
+			<attribute name="maven.artifactId" value="slf4j-api"/>
+			<attribute name="maven.version" value="2.0.16"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,19 +1,18 @@
 package testRunner;
 
-
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
-import io.cucumber.testng.CucumberOptions.SnippetType;
+import org.junit.runner.RunWith;
 import io.cucumber.core.cli.Main;
+import io.cucumber.junit.Cucumber;
 
-@CucumberOptions(
-		  features = "src/test/resources/features", // To include all feature files in the folder
-		  glue = "StepDefinitions",
+@RunWith(Cucumber.class)
+@io.cucumber.junit.CucumberOptions(
+		  features = "src/test/resources/features/configuration/saucelabs.feature", // To include all feature files in the folder
+		  glue = "StepDefinitions.saucelabs.feature",
 		  dryRun = true,
-		  snippets = SnippetType.CAMELCASE
+		  snippets = io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE
 		)
 
 
-public class example_runner extends AbstractTestNGCucumberTests{
+public class example_runner{
 
 }
